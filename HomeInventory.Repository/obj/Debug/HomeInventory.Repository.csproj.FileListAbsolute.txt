@@ -1,0 +1,14 @@
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\HomeInventory.Repository.dll.config
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\HomeInventory.Repository.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\HomeInventory.Repository.pdb
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\EntityFramework.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\EntityFramework.xml
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\obj\Debug\HomeInventory.Repository.csprojResolveAssemblyReference.cache
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\obj\Debug\HomeInventory.Repository.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\obj\Debug\HomeInventory.Repository.pdb
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\HomeInventory.DataObject.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\bin\Debug\HomeInventory.DataObject.pdb
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\obj\Debug\HomeInventory.Repository.Migrations.CreateHomeInventoryDB.resources
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.Repository\obj\Debug\HomeInventory.Repository.csproj.GenerateResource.Cache

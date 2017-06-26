@@ -1,0 +1,4 @@
+﻿1. Check project into git hub
+2. Add Repository to project
+3. Investigate unit of work and add that
+4. Write unit tests to test the repository layer

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings xdt:Transform="InsertIfMissing">
+    <add key="EmailTemplateEndPoint" value="EmailTemplateService" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
+    <add key="EmailMessageEndPoint" value="EmailMessageService" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
+  </appSettings>
+  <system.serviceModel xdt:Transform="InsertIfMissing">
+  <client xdt:Transform="InsertIfMissing">
+      <endpoint xdt:Locator="Match(behaviorConfiguration)" xdt:Transform="InsertIfMissing" address="http://100.20.1.135/api/1_0/" behaviorConfiguration="EmailTemplateBehavior" binding="webHttpBinding" bindingConfiguration="StandardWebHttpBinding" contract="Aquilent.Navy.Email.Client.IEmailTemplate" name="EmailTemplateService" />
+      <endpoint xdt:Locator="Match(behaviorConfiguration)" xdt:Transform="InsertIfMissing" address="http://100.20.1.135/api/1_0/" behaviorConfiguration="EmailMessageBehavior" binding="webHttpBinding" bindingConfiguration="StandardWebHttpBinding" contract="Aquilent.Navy.Email.Client.IEmailMessage" name="EmailMessageService" />
+    </client>
+    <behaviors xdt:Transform="InsertIfMissing">
+      <endpointBehaviors xdt:Transform="InsertIfMissing" >
+        <behavior xdt:Transform="InsertIfMissing" name="EmailTemplateBehavior" xdt:Locator="Match(name)" >
+          <webHttp />
+        </behavior>
+         <behavior xdt:Transform="InsertIfMissing" name="EmailMessageBehavior" xdt:Locator="Match(name)">
+          <webHttp />
+        </behavior>
+      </endpointBehaviors>
+   </behaviors>
+    <bindings xdt:Transform="InsertIfMissing">
+      <webHttpBinding xdt:Transform="InsertIfMissing">
+        <binding name="StandardWebHttpBinding" maxReceivedMessageSize="2147483647" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
+        <binding  name="SecureWebHttpBinding" maxReceivedMessageSize="2147483647"  xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)">
+          <security mode="Transport"  />
+        </binding>
+        <binding name="SecureBasicWebHttpBinding" maxReceivedMessageSize="2147483647"  xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" >
+          <security mode="Transport" >
+            <transport clientCredentialType="Basic" />
+          </security>
+        </binding>
+        <binding name="InsecureBasicWebHttpBinding" maxReceivedMessageSize="2147483647" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" >
+          <security mode="None"  >
+            <transport clientCredentialType="Basic" />
+          </security>
+        </binding>
+      </webHttpBinding>
+    </bindings>
+  </system.serviceModel>
+</configuration>

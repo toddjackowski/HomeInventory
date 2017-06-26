@@ -1,0 +1,4 @@
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.DataObject\bin\Debug\HomeInventory.DataObject.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.DataObject\bin\Debug\HomeInventory.DataObject.pdb
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.DataObject\obj\Debug\HomeInventory.DataObject.dll
+C:\Users\tjackowski\Documents\Visual Studio 2015\Projects\HomeInventory\HomeInventory.DataObject\obj\Debug\HomeInventory.DataObject.pdb

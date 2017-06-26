@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings >
+    <add key="EmailTemplateEndPoint" value="EmailTemplateService" xdt:Transform="Remove"  xdt:Locator="Match(key)"/>
+    <add key="EmailMessageEndPoint" value="EmailMessageService" xdt:Transform="Remove"  xdt:Locator="Match(key)"/>
+  </appSettings>
+  <system.serviceModel>
+    <client>
+      <endpoint xdt:Transform="Remove" xdt:Locator="Match(name)" address="http://100.20.1.135/api/1_0/" behaviorConfiguration="EmailTemplateBehavior" binding="webHttpBinding" bindingConfiguration="StandardWebHttpBinding" contract="Aquilent.Navy.Email.Client.IEmailTemplate" name="EmailTemplateService" />
+      <endpoint xdt:Transform="Remove" xdt:Locator="Match(name)" address="http://100.20.1.135/api/1_0/" behaviorConfiguration="EmailMessageBehavior" binding="webHttpBinding" bindingConfiguration="StandardWebHttpBinding" contract="Aquilent.Navy.Email.Client.IEmailMessage" name="EmailMessageService" />
+    </client>
+    <behaviors>
+      <endpointBehaviors>
+        <behavior xdt:Transform="Remove" name="EmailTemplateBehavior" xdt:Locator="Match(name)">
+          <webHttp />
+        </behavior>
+         <behavior xdt:Transform="Remove" name="EmailMessageBehavior" xdt:Locator="Match(name)" >
+          <webHttp />
+        </behavior>
+      </endpointBehaviors>
+    </behaviors>
+    <bindings>
+      <webHttpBinding  >
+        <binding name="StandardWebHttpBinding" maxReceivedMessageSize="2147483647" xdt:Transform="Remove" xdt:Locator="Match(name)"/>
+        <binding name="SecureWebHttpBinding" maxReceivedMessageSize="2147483647"  xdt:Transform="Remove" xdt:Locator="Match(name)">
+          <security mode="Transport"/>
+        </binding>
+        <binding name="SecureBasicWebHttpBinding" maxReceivedMessageSize="2147483647" xdt:Transform="Remove" xdt:Locator="Match(name)">
+          <security mode="Transport" >
+            <transport clientCredentialType="Basic" />
+          </security>
+        </binding>
+        <binding name="InsecureBasicWebHttpBinding" maxReceivedMessageSize="2147483647" xdt:Transform="Remove" xdt:Locator="Match(name)">
+          <security mode="None" >
+            <transport clientCredentialType="Basic" />
+          </security>
+        </binding>
+      </webHttpBinding>
+    </bindings>
+  </system.serviceModel>
+</configuration>
